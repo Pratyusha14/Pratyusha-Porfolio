@@ -1,0 +1,53 @@
+.project-card {
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: rgb(93, 93, 93) 0px 0px 10px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+  position: relative;
+}
+
+.project-image {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.github-icon {
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.3rem;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.github-icon:hover {
+  transform: scale(1.2);
+  color: #24292e;
+}
+
+.project-content {
+  padding: 1rem;
+}
+
+.project-tech ul {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tech-item {
+  background-color: #f3f3f3;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.project-name {
+  color: #1a202c; /* Example: Dark slate gray, which works for both themes */
+}

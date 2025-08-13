@@ -1,0 +1,350 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav a {
+  @apply px-4 py-2.5 text-lg font-semibold;
+  display: inline-block;
+  position: relative;
+  height: 50px;
+}
+
+nav a:after {
+  content: "";
+  position: absolute;
+  width: 75%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 12%;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.55s ease-out;
+}
+
+/* can remove*/
+nav a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+nav a:hover {
+  color: #37e4db;
+}
+
+.mobile-nav {
+  @apply block md:hidden fixed top-10 py-2 w-full h-full bg-black duration-500;
+}
+
+.text-accent {
+  color: #37e4db;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.2 !important;
+}
+
+.Typewriter {
+  display: inline;
+}
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+}
+
+.blobc {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  transition: opacity 1.3s ease-in-out;
+  opacity: 0;
+}
+
+.blobc.blobs-visible {
+  opacity: 1;
+}
+
+.word {
+  transition: opacity 1.3s ease-in-out;
+  opacity: 0;
+}
+
+.word.word-visible {
+  opacity: 1;
+}
+
+/* .github, .linkedin, .instagram, .twitter{
+    transition: opacity 1.3s ease-in-out;
+    opacity: 0;
+}
+
+.github.icons-show{
+    opacity: 1;
+    transition-delay: 0.1s;
+}
+
+.linkedin.icons-show{
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.instagram.icons-show{
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
+.twitter.icons-show{
+    opacity: 1;
+    transition-delay: 0.4s;
+} */
+
+/* Define the initial state of the icons, below the screen */
+.github,
+.linkedin,
+.instagram,
+.twitter {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+/* Define the animation */
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the elements with the respective delay */
+.github.icons-show {
+  animation: slideInFromBottom 1.3s ease-in-out 0.1s forwards;
+}
+
+.linkedin.icons-show {
+  animation: slideInFromBottom 1.3s ease-in-out 0.2s forwards;
+  animation-delay: 0.7s;
+}
+
+.instagram.icons-show {
+  animation: slideInFromBottom 1.3s ease-in-out 0.3s forwards;
+  animation-delay: 1.2s;
+}
+
+.twitter.icons-show {
+  animation: slideInFromBottom 1.3s ease-in-out 0.4s forwards;
+  animation-delay: 1.7s;
+}
+
+.blob {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 42% 56% 72% 28% /42% 42% 56% 48%;
+  background: url("../src/assets/pic.png");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  animation: blob 3.7s linear infinite;
+  position: relative;
+  top: -520px;
+  left: -25px;
+}
+
+@keyframes blob {
+  0%,
+  100% {
+    border-radius: 42% 56% 72% 28% /42% 42% 56% 48%;
+  }
+
+  33% {
+    border-radius: 42% 28% 48% 48% /28% 28% 72% 72%;
+  }
+
+  66% {
+    border-radius: 100% 56% 56% 100% /100% 100% 56% 56%;
+  }
+}
+
+.blob-overlay {
+  width: 535px;
+  height: 535px;
+  overflow: hidden;
+  border-radius: 58% 44% 28% 72% / 58% 58% 44% 52%;
+  background: linear-gradient(135deg, #191970, #b9a6d3);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  animation: blob-overlay 3.7s linear infinite;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+@keyframes blob-overlay {
+  0%,
+  100% {
+    border-radius: 58% 44% 28% 72% / 58% 58% 44% 52%;
+  }
+
+  33% {
+    border-radius: 30% 60% 70% 40% /50% 60% 30% 60%;
+  }
+
+  66% {
+    border-radius: 42% 28% 48% 48% / 28% 28% 72% 72%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-info {
+    display: block;
+    width: fit-content;
+  }
+
+  .lettersc {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero-info {
+    margin-left: 7vh;
+  }
+
+  .blobc {
+    width: 400px;
+    height: 400px;
+    padding-top: 50px;
+  }
+
+  .blob {
+    width: 300px;
+    height: 300px;
+    top: -330px;
+    left: -1px;
+  }
+
+  .blob-overlay {
+    width: 335px;
+    height: 335px;
+    left: -18px;
+    top: -10px;
+  }
+
+  .icons {
+    position: relative;
+    top: 150px;
+    left: 50px;
+  }
+
+  .text-shpere {
+    margin-right: auto;
+    font-size: x-small;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(44, 44, 44);
+    margin-top: 1.5em;
+  }
+
+  .more {
+    padding-bottom: 10px;
+  }
+
+  .contactg {
+    display: flex;
+    flex-direction: column;
+
+    gap: 60px;
+  }
+
+  .contact {
+    margin-left: auto;
+  }
+
+  .half {
+    display: flex;
+    align-items: center;
+    width: auto;
+  }
+}
+
+.anchor-icon {
+  display: flex;
+  position: relative;
+  top: -30px;
+  left: 320px;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+}
+
+/* Default line color for dark mode */
+:root {
+  --line-color: #fff;
+  /* Default line color for dark mode */
+}
+
+/* Override line color for light mode */
+[data-theme="light"] {
+  --line-color: #000000;
+  /* Line color for light mode */
+}
+
+.dark-date {
+  color: white;
+}
+
+.light-date {
+  color: black;
+}
+
+#description {
+  margin: 1.5em 0 2em 0;
+}
+
+.dark {
+  background-color: #020208;
+  color: #ffffff;
+  .text-teal-500 {
+    color: #14B8A6
+  }
+  .tagcloud--item {
+    color: #00ffffff;
+    text-transform: uppercase;
+  }
+}
+
+.light {
+  background-color: #ffffff;
+  color: #0c0824;
+  .text-teal-500 {
+    color: #4779c3; 
+  }
+  .tagcloud--item {
+    color: #000000;
+    text-transform: uppercase;
+  }
+}

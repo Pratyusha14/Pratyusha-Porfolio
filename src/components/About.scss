@@ -1,0 +1,39 @@
+.text-shpere {
+  position: relative;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tagcloud {
+  display: inline-block;
+  top: 0;
+  left: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.0625em;
+  font-size: 1.1em;
+}
+
+/* Change color of each text in sphere on hover  
+.tagcloud--item {
+  color: #00ffffff;
+  text-transform: uppercase;
+} */
+
+@media (max-width: 768px) {
+  .aboutc {
+    flex-direction: column-reverse;
+    margin-left: auto;
+    opacity: 0;
+  }
+
+  .text-shpere {
+    order: 2;
+  }
+
+  .about-info {
+    order: 1;
+  }
+}
