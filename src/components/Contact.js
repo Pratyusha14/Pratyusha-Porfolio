@@ -27,7 +27,7 @@ const Contact = ({ theme }) => {
         </p>
 
         <a
-          href="https://drive.google.com/file/d/1GMt1OST8npyl5QRbpZGprUF5Uq3U3vZX/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1gDAUZ84ODoBspR8teTjMRToKMAK8aHWH/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
           className="font-bold border-2 border-teal-500 px-4 py-2"
