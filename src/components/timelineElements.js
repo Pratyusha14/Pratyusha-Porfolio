@@ -5,22 +5,21 @@ let timelineElements = [
   location: "Openprise - Hyderabad, India",
   description:
     `<ul>
-      <li>•	Developed and maintained scalable, responsive UIs using Vue 3, TypeScript, and Tailwind CSS, improving performance
- across 5+ modules.</li> 
-      <li>•	Migrated 150+ legacy Vue 2 components to Vue 3, reducing technical debt by 40% and increasing build efficiency.</li>
-      <li>•	Implemented reusable component libraries and standardized design tokens, enabling consistent UI/UX and accelerating
- development by 30%.</li>
-      <li>•	Integrated ECharts for dynamic dashboards and chart visualizations, with real-time backend API connectivity supporting
- data-driven insights for stakeholders.</li>
-      <li>•	Designed secure role-based access interfaces and intuitive hierarchical views for large data sets, ensuring optimized rendering
- and user flow.</li>
-      <li>•	Improved performance and load times by implementing lazy loading, debounced inputs, and code splitting, reducing initial
- load by 30%.</li>
-      <li>•	Partnered with designers to convert Figma wireframes into dynamic Vue 3 components, improving design accuracy and
- reducing handoff cycles.</li>
+      <li>•	Designed and delivered scalable, production-grade features using Java, Spring Boot, and Vue.js, improving overall system
+stability and reliability across core business workflows.</li> 
+      <li>•	Engineered and maintained RESTful APIs with robust business logic, validation and integrations, improving API success
+rates by 25% through better error handling and validation.</li>
+      <li>•	Drove end-to-end performance improvements by optimizing rendering behavior, service execution paths, and data access
+patterns, reducing average API response latency by 30%.</li>
+      <li>•	Partnered with cross-functional teams across product, UX, and engineering to translate changing requirements into scalable,
+maintainable implementations, minimizing rework and improving delivery predictability.</li>
+      <li>•	Implemented comprehensive unit and end-to-end testing across critical application paths, strengthening release confidence,
+increasing effective test coverage, and reducing production regressions by 40%.</li>
+      <li>•	Supported CI/CD-driven deployments, collaborating with DevOps teams to improve release reliability and reduce production
+issue resolution time.</li>
+      <li>•	Actively contributed to code reviews and architectural discussions, prioritizing readability, performance, security, and
+long-term system stability.</li>
       <li>•	Wrote 250+ end-to-end tests using Nightwatch.js, maintaining 95% test coverage and reducing production bugs by 60%.</li>
-      <li>•	Collaborated with cross-functional teams in an Agile setup, conducted system design reviews, mentored junior engineers, and
- ensured smooth CI/CD operations with 100% pipeline uptime.</li>
       </ul>  `,
   date: "Sept 2022 - Present",
   icon: "work",
