@@ -1,9 +1,8 @@
 @import "animate.css";
 
-.hero-info {
-  h1 {
-    animation: fadeIn 1s 0.3s backwards;
-  }
+/* Hero info animation */
+.hero-info h1 {
+  animation: fadeIn 1s 0.3s backwards;
 }
 
 section {
@@ -13,45 +12,37 @@ section {
 
 .hero-section {
   position: relative;
+}
 
-  #particles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0; // Ensure it stays behind the content
+/* Particles layer */
+.hero-section #particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Content above particles */
+.hero-section .lettersc {
+  position: relative;
+  z-index: 1;
+}
+
+/* Visibility animations */
+.hero-section .blobc.blobs-visible,
+.hero-section .icons.icons-show,
+.hero-section .word.word-visible {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-
-  .lettersc {
-    position: relative;
-    z-index: 1; // Ensure it stays above the particles
-  }
-
-  .blobc {
-    &.blobs-visible {
-      animation: fadeIn 1s ease-in-out forwards;
-    }
-  }
-
-  .icons {
-    &.icons-show {
-      animation: fadeIn 1s ease-in-out forwards;
-    }
-  }
-
-  .word {
-    &.word-visible {
-      animation: fadeIn 1s ease-in-out forwards;
-    }
-  }
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  100% {
+    opacity: 1;
   }
 }
