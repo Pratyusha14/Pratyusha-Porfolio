@@ -58,7 +58,7 @@ function Hero({ theme }) { // Accept theme as a prop
 
 
   return (
-    <section className={`hero-section md:py-32 ${theme}`}>
+    <section className={`hero-section md:py-32 ${theme}`} id="home">
       <div className="relative container mx-auto">
         <ParticlesComponent id="particles" theme={theme}/>
         <div className="lettersc grid md:grid-cols-2 items-center justify-center md:justify-between relative">
