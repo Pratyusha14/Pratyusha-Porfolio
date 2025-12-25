@@ -19,7 +19,7 @@ const Header = ({ theme, toggleTheme }) => {
         <nav className="hidden md:flex items-center space-x-8">
           <a href="#about" className="hover:text-teal-500">About</a>
           <a href="#experience" className="hover:text-teal-500">Experience</a>
-          <a href="#projects" className="hover:text-teal-500">Projects</a>
+          <a href="#project" className="hover:text-teal-500">Projects</a>
           <a href="#contact" className="hover:text-teal-500">Contact</a>
           <a
             href="https://drive.google.com/file/d/1gDAUZ84ODoBspR8teTjMRToKMAK8aHWH/view?usp=sharing"
