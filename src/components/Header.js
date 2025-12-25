@@ -5,30 +5,22 @@ import { FaMoon, FaSun } from 'react-icons/fa';
 const Header = ({ theme, toggleTheme }) => {
   const [toggle, setToggle] = useState(false);
 
-  const handleToggle = () => setToggle((prevToggle) => !prevToggle);
+  const handleToggle = () => setToggle((prev) => !prev);
 
   return (
     <header className={`flex justify-between items-center px-5 py-4 fixed w-full z-10 ${theme}`}>
       {/* Logo */}
-      <a href="/Portfolio" className="logo text-2xl font-bold hover:text-teal-500">
+      <a href="#home" className="logo text-2xl font-bold hover:text-teal-500">
         Pratyusha Mallampeta
       </a>
 
       {/* Desktop Navigation */}
       <div className="flex items-center space-x-8">
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="/Portfolio/#about" className="hover:text-teal-500">
-            About
-          </a>
-          <a href="/Portfolio/#experience" className="hover:text-teal-500">
-            Experience
-          </a>
-          <a href="/Portfolio/#project" className="hover:text-teal-500">
-            Projects
-          </a>
-          <a href="/Portfolio/#contact" className="hover:text-teal-500">
-            Contact
-          </a>
+          <a href="#about" className="hover:text-teal-500">About</a>
+          <a href="#experience" className="hover:text-teal-500">Experience</a>
+          <a href="#projects" className="hover:text-teal-500">Projects</a>
+          <a href="#contact" className="hover:text-teal-500">Contact</a>
           <a
             href="https://drive.google.com/file/d/1gDAUZ84ODoBspR8teTjMRToKMAK8aHWH/view?usp=sharing"
             target="_blank"
@@ -39,16 +31,16 @@ const Header = ({ theme, toggleTheme }) => {
           </a>
         </nav>
 
-        {/* Creative Toggle Switch */}
+        {/* Theme Toggle */}
         <div className="relative flex items-center cursor-pointer">
           <div
-            className={`w-12 h-6 flex items-center rounded-full p-1 duration-300 ease-in-out ${
+            className={`w-12 h-6 flex items-center rounded-full p-1 duration-300 ${
               theme === 'light' ? 'bg-yellow-400' : 'bg-gray-600'
             }`}
             onClick={toggleTheme}
           >
             <div
-              className={`w-5 h-5 flex items-center justify-center rounded-full bg-white shadow-md transform duration-300 ease-in-out ${
+              className={`w-5 h-5 flex items-center justify-center rounded-full bg-white shadow-md transform duration-300 ${
                 theme === 'light' ? 'translate-x-6' : 'translate-x-0'
               }`}
             >
@@ -64,36 +56,20 @@ const Header = ({ theme, toggleTheme }) => {
 
       {/* Mobile Navigation */}
       <nav
-        className={`mobile-nav fixed top-0 left-0 w-full transform transition-transform duration-300 ease-in-out ${theme} ${toggle ? 'translate-x-0' : 'translate-x-full'}`}
-        aria-hidden={!toggle}
+        className={`mobile-nav fixed top-0 left-0 w-full transition-transform duration-300 ${theme} ${
+          toggle ? 'translate-x-0' : 'translate-x-full'
+        }`}
       >
         <ul className="flex flex-col items-center space-y-6 py-20">
-          <li>
-            <a href="/Portfolio/#about" className="hover:text-teal-500" onClick={handleToggle}>
-              About
-            </a>
-          </li>
-          <li>
-            <a href="/Portfolio/#experience" className="hover:text-teal-500" onClick={handleToggle}>
-              Experience
-            </a>
-          </li>
-          <li>
-            <a href="/Portfolio/#project" className="hover:text-teal-500" onClick={handleToggle}>
-              Projects
-            </a>
-          </li>
-          <li>
-            <a href="/Portfolio/#contact" className="hover:text-teal-500" onClick={handleToggle}>
-              Contact
-            </a>
-          </li>
+          <li><a href="#about" onClick={handleToggle}>About</a></li>
+          <li><a href="#experience" onClick={handleToggle}>Experience</a></li>
+          <li><a href="#projects" onClick={handleToggle}>Projects</a></li>
+          <li><a href="#contact" onClick={handleToggle}>Contact</a></li>
           <li>
             <a
               href="https://drive.google.com/file/d/1GuwHkrzUhsO9IczKczqiRx6UUGeAY_3H/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-teal-500"
               onClick={handleToggle}
             >
               Resume
@@ -105,7 +81,7 @@ const Header = ({ theme, toggleTheme }) => {
       {/* Mobile Menu Button */}
       <button
         onClick={handleToggle}
-        className="block md:hidden text-white focus:outline-none"
+        className="block md:hidden text-white"
         aria-label={toggle ? 'Close menu' : 'Open menu'}
       >
         {!toggle ? <AiOutlineMenu size={30} /> : <AiOutlineClose size={30} />}
