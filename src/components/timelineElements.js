@@ -5,21 +5,18 @@ let timelineElements = [
   location: "Openprise - Hyderabad, India",
   description:
     `<ul>
-      <li>•	Designed and delivered scalable, production-grade features using Java, Spring Boot, and Vue.js, improving overall system
-stability and reliability across core business workflows.</li> 
-      <li>•	Engineered and maintained RESTful APIs with robust business logic, validation and integrations, improving API success
-rates by 25% through better error handling and validation.</li>
-      <li>•	Drove end-to-end performance improvements by optimizing rendering behavior, service execution paths, and data access
-patterns, reducing average API response latency by 30%.</li>
-      <li>•	Partnered with cross-functional teams across product, UX, and engineering to translate changing requirements into scalable,
-maintainable implementations, minimizing rework and improving delivery predictability.</li>
-      <li>•	Implemented comprehensive unit and end-to-end testing across critical application paths, strengthening release confidence,
-increasing effective test coverage, and reducing production regressions by 40%.</li>
-      <li>•	Supported CI/CD-driven deployments, collaborating with DevOps teams to improve release reliability and reduce production
-issue resolution time.</li>
-      <li>•	Actively contributed to code reviews and architectural discussions, prioritizing readability, performance, security, and
-long-term system stability.</li>
-      <li>•	Wrote 250+ end-to-end tests using Nightwatch.js, maintaining 95% test coverage and reducing production bugs by 60%.</li>
+      <li>•	Delivered scalable UI components and real-time dashboards using Vue 3, Pinia, Tailwind CSS, and ECharts, boosting team
+development velocity by 30%.</li> 
+      <li>•	Developed and deployed RESTful APIs using Java, Spring Boot and Node.js, enabling data-driven frontend and backend
+workflows while processing 500K+ records per month.</li>
+      <li>•	Configured and maintained CI/CD pipelines using AWS, Docker, and Jenkins, reducing manual deployments and build
+failures by 40%+ and stabilizing release workflows.</li>
+      <li>•	Optimized Openprise product performance using lazy loading, async rendering, and efficient state management, making page
+load 1.5 times faster.</li>
+      <li>•	Authored 250+ automated test cases across end-to-end testing using Nightwatch.js and unit testing using Jest, achieving 95%
+test coverage and reducing regression risk.</li>
+      <li>•	Led system design reviews, resolved critical production issues, mentored junior engineers, and collaborated closely with QA,
+Product, and DevOps teams to ensure stability and delivery quality.</li>
       </ul>  `,
   date: "Sept 2022 - Present",
   icon: "work",
@@ -30,10 +27,10 @@ long-term system stability.</li>
     location: "Openprise - Hyderabad, India",
     description:
       `<ul>
-        <li>• Resolved over 40+ UI and logic bugs with optimized, maintainable code, contributing to a 15% improvement in
-overall app performance.</li>
-        <li>• Partnered with senior engineers to identify bottlenecks and implement cleaner architectural patterns across the front-end
- stack.</li>
+        <li>• Addressed 40+ frontend UI and logic defects across core modules through structured code optimization and better
+component modularization.</li>
+        <li>• Worked closely with senior engineers to apply component-based design principles, improving code readability, reusability, and
+long-term maintainability.</li>
         </ul>  `,
     date: "Jun 2022 – Aug 2022",
     icon: "Work",
@@ -44,9 +41,9 @@ overall app performance.</li>
     location: "Hitch Works - Hyderabad, India",
     description:
     `<ul>
-    <li>• Contributed to the development of a React.js-based internal dashboard for users by integrating GraphQL APIs to
-optimize data fetching (reducing network overhead by 30%) and collaborating with a remote team of 4 to deliver
-features and fixes within agile sprint cycles.</li>
+    <li>• Built an internal React.js web application integrated with GraphQL APIs to streamline data access, improving data retrieval
+efficiency and reducing network usage by 30%.</li>
+    <li>• Engaged with the distributed agile team to deliver features iteratively and support rapid product enhancements.</li>
   </ul>`,
     date: "March 2022 - Jun 2022",
     icon: "work",
@@ -57,8 +54,8 @@ features and fixes within agile sprint cycles.</li>
     location: "CDK Global - Hyderabad, India",
     description:
     `<ul>
-    <li>• Refactored backend modules using C++ in a Linux environment and optimized SQL queries, improving execution time by
- 40% while supporting operations for 1,000+ users and enhancing performance across 3 core modules.</li>
+    <li>• Executed backend improvements using C++ in a Linux environment and optimized SQL queries, improving execution time
+and supporting operations for 1,000+ users across core modules.</li>
   </ul>`,
     date: "Aug 2021 – Feb 2022",
     icon: "work",
