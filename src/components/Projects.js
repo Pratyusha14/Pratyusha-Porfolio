@@ -78,7 +78,7 @@ const Projects = (theme) => {
 
             <div className='more flex justify-center items-center py-28'>
                 <a
-                    href="https://github.com/Pratyusha14" target="_blank"
+                    href="https://github.com/Pratyusha14"
                     className='border-2 border-teal-500 px-4 py-2 hover:bg-teal-500 hover:text-black transition-colors duration-300'
                 >
                     See More
