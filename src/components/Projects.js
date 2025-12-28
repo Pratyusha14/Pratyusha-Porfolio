@@ -19,19 +19,19 @@ const Projects = (theme) => {
                         name: 'Portfolio Website',
                         link: 'https://github.com/Pratyusha14/Pratyusha-Porfolio/',
                         description: 'Built an interactive portfolio website from the scratch using React.js and Node.js to showcase skills, experience and projects effectively.',
-                        tech: ['React.js', 'Tailwind CSS', 'Node.js'],
+                        tech: ['React.js', 'Tailwind CSS'],
                         image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80perlCopyEdit', // Replace with actual image URL
                     },
                     {
-                        name: 'OneStop Website',
-                        link: 'https://github.com/Pratyusha14/OneStop-Website-18BD1A056X',
-                        description: 'Developed a user-friendly website from the ground for a shop offering types of items with price and quantity for a convenient shopping experience and streamlined inventory tracking by 30% through real-time data integration.',
-                        tech: ['EJS', 'Bootstrap', 'NodeJS', 'Express', 'MongoDB'],
+                        name: 'Fuel Mart',
+                        link: 'https://github.com/Pratyusha14/FuelMart',
+                        description: 'Implemented a user-friendly website from the ground for gas stations offering fuel, dairy, snacks, and grocery items for a convenient shopping experience and streamlined inventory tracking by 30% through real-time data integration.',
+                        tech: ['ReactJS', 'Spring Boot', 'MongoDB'],
                         image: 'https://www.shutterstock.com/shutterstock/photos/2025754670/display_1500/stock-vector-online-shopping-d-illustration-online-shop-online-payment-and-delivery-concept-with-floating-2025754670.jpg', // Replace with actual image URL
                     },
                     {
                         name: 'ChatBot',
-                        link: 'https://github.com/Pratyusha14/ChatBot-18BD1A056X',
+                        link: 'https://github.com/Pratyusha14/ChatBot',
                         description: 'Developed a machine learning model with an improved accuracy of 8% using xgboost that aids in identifying potential defaulters.',
                         tech: ['Python', 'Machine Learning', 'Neural Networks'],
                         image: 'https://fps.cdnpk.net/images/home/subhome-ai.webp?w=649&h=649', // Replace with actual image URL
