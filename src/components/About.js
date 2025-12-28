@@ -7,8 +7,8 @@ function About(theme) {
         const container = ".tagcloud";
         const texts = [
           "JAVA",
-          "VueJS V2",
-          "VueJS V3",
+          "Spring Boot",
+          "VueJS",
           "JavaScript",
           "ReactJS",
           "Vuetify",
